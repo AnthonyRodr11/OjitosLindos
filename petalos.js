@@ -6,3 +6,4 @@ function showMessage(message) {
 function closePopup() {
     document.getElementById("popup").style.display = "none";
 }
+ 

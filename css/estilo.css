@@ -1,15 +1,15 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #fff8e1; /* Fondo suave */
+    background-color: #ffefbb
 }
 
 .contenedor {
     text-align: center;
 }
 
-/* Navbar */
+
 .navbar {
-    background-color: #f4c542; /* Amarillo cálido */
+    background-color: #f4c542; 
     padding: 10px 0;
     display: flex;
     justify-content: center;
@@ -27,31 +27,31 @@ body {
 .navbar li {
     
     margin: 0 15px;
-    background-color: #f4c542; /* Fondo amarillo para cada enlace */
-    border-radius: 8px; /* Bordes redondeados */
+    background-color: #f4c542; 
+    border-radius: 8px; 
     padding: 5px 10px;
 }
 
 .navbar a {
-    color: #3b3b3b; /* Texto oscuro */
+    color: #3b3b3b; 
     text-decoration: none;
     font-weight: bold;
 }
 
 .navbar a:hover {
-    color: #ffd700; /* Dorado brillante en hover */
+    color: #ffd700; 
 }
 
-/* Footer */
+
 .footer {
     background-color: #f4c542;
     color: #3b3b3b;
     padding: 15px 0;
     font-size: 14px;
-    border-top: 2px solid #dda821; /* Ligeramente más oscuro */
+    border-top: 2px solid #dda821; 
 }
 
-/* Contenido */
+
 .sunflower {
     position: relative;
     display: inline-block;
@@ -62,16 +62,16 @@ body {
     width: 300px; 
 }
 
-/* Pétalos clicables */
+
 .petal {
     position: absolute;
     width: 50px;
     height: 50px;
     cursor: pointer;
-    background: transparent; /* Fondo transparente */
+    background: transparent; 
 }
 
-/* Ajuste de posición para cada pétalo */
+
 .petal1 { top: 50px; left: 130px; }
 .petal2 { top: 20px; left: 170px; }
 .petal3 { top: 50px; left: 210px; }
@@ -95,8 +95,8 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 20px;
-    background: rgba(255, 248, 209, 0.9); /* Fondo suave inspirado en el girasol */
-    border: 2px solid #dda821; /* Borde dorado */
+    background: rgba(255, 248, 209, 0.9); 
+    border: 2px solid #dda821; 
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
     text-align: center;
     border-radius: 8px;
@@ -119,5 +119,5 @@ body {
 }
 
 .close-btn:hover {
-    background-color: #ffd700; /* Dorado brillante */
+    background-color: #ffd700; 
 }
