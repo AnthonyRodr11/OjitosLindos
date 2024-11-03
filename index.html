@@ -33,19 +33,29 @@
                 contiene una razón, un recuerdo o un elogio que refleja lo maravilloso de ti dejando que cada
                 palabra te recuerde lo preciada que eres Ojitos Lindos...
             </p>
-
+            
             <img src="img/GirasolOficial.png" alt="">
-
         </div>
 
+        <div class="sunflower">
+            <!-- Pétalos clicables -->
+            <div class="petal petal1" onclick="showMessage('Eres increíblemente especial!')"></div>
+            <div class="petal petal2" onclick="showMessage('Cada día me sorprendes más.')"></div>
+        </div>
 
         <div class="footer">
-
             <p>Cada pétalo es especial, así como cada parte de ti</p>
-
-            <p>Con admiracion de: <strong>Blue</strong></p>
+            <p>Con admiración de: <strong>Blue</strong></p>
         </div>
 
     </div>
+
+    <!-- Popup para mostrar mensajes -->
+    <div id="popup" class="popup">
+        <p id="popupMessage"></p>
+        <span class="close-btn" onclick="closePopup()">Cerrar</span>
+    </div>
+
+    <script src="petalos.js"></script>
 </body>
 </html>
