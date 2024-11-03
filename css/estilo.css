@@ -71,6 +71,18 @@ body {
     background: transparent; 
 }
 
+.centro{
+
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 115px; 
+    left: 115px; 
+    cursor: pointer;
+    background: transparent;
+
+}
+
 
 .petal1 { top: 50px; left: 130px; }
 .petal2 { top: 20px; left: 170px; }
@@ -83,10 +95,10 @@ body {
 .petal9 { top: 160px; left: 50px; }
 .petal10 { top: 100px; left: 50px; }
 .petal11 { top: 50px; left: 90px; }
-.petal12 { top: 20px; left: 130px; }
-.petal13 { top: 75px; left: 180px; }
-.petal14 { top: 135px; left: 190px; }
-.petal15 { top: 135px; left: 90px; }
+.petal12 { top: 30px; left: 120px; } 
+.petal13 { top: 50px; left: 160px; }  
+.petal14 { top: 130px; left: 150px; } 
+.petal15 { top: 130px; left: 80px; }  
 
 .popup {
     display: none;
