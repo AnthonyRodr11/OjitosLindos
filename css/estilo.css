@@ -133,3 +133,27 @@ body {
 .close-btn:hover {
     background-color: #ffd700; 
 }
+
+.popup button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popup button:hover {
+    background-color: #ddd;
+}
+
+
+.popup img {
+    width: 300px; /* Ancho fijo */
+    height: 300px; /* Altura fija */
+    object-fit: contain; /* Mantener las proporciones dentro del contenedor */
+    border-radius: 10px; /* Bordes redondeados opcionales */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra opcional */
+}
+
+
