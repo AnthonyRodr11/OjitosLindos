@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dibujitos</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+    <div class="contenedor">
+
+        <div class="header">
+
+            <h1>Una cajita, para recordate lo especial que Eres</h1>
+
+            <div class="navbar">
+                <ul>
+                    <li><a href="main.html">Para ti</a></li>
+                    <li><a href="index.html">Ojitos Lindos</a></li>
+                    <li><a href="cajitaDibujitos.html">Cajita</a></li>
+                    <li><a href="recordar.html">Recuerda siempre</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="contenido">
+
+            <h2>Haz clic y descubre algo especia</h2>
+
+            <p> En esta sección descubrirás una cajita especial llena de dibujitos diseñados para sacarte 
+                una sonrisa y recordarte lo maravillosa que eres. Cada dibujo lleva un mensaje que resalta 
+                tus virtudes y busca alegrar tu día.
+                Puedes abrir la cajita tantas veces como desees, aunque te sugiero tomar un dibujito por día 
+                para que esta experiencia te acompañe y te anime durante varios momentos. Los dibujos 
+                aparecerán de forma aleatoria, así que si obtienes uno repetido, ¡simplemente vuelve a intentarlo 
+                y déjate sorprender por otro Dibujito!
+
+                Además, este espacio seguirá creciendo con más dibujitos en el futuro, para que siempre encuentres 
+                algo nuevo que ilumine tu día. 🌻
+            </p>
+
+            <h3>¡Que esperas, da clic en la cajita!</h3>
+
+            <div class="cajita">
+
+                <input type="image" src="img/Dibujitos/cajita.png" alt="Cajita" onclick="obtenerDibujo()" style="width: 30%; height: 30%;">
+
+                <div id="popup" class="popup">
+                    <img id="popupImage" src="" alt="Dibujito Especial">
+                    <br>
+                    <button onclick="closePopup()">Cerrar</button>
+                </div>
+
+                <script>
+
+                    //lista con dibujitos
+                    const listDibujitos = ["img/Dibujitos/Dibujo 1.jpg",
+                                           "img/Dibujitos/Dibujo 2.jpg",
+                                           "img/Dibujitos/Dibujo 3.jpg",
+                                           "img/Dibujitos/Dibujo 4.jpg",
+                                           "img/Dibujitos/Dibujo 5.jpg",
+                                           "img/Dibujitos/Dibujo 6.jpg",
+                                           "img/Dibujitos/Dibujo 7.jpg",
+                                           "img/Dibujitos/Dibujo 8.jpg",
+                                           "img/Dibujitos/Dibujo 9.jpg",
+                                           "img/Dibujitos/Dibujo 10.jpg",
+                                           "img/Dibujitos/Dibujo 11.jpg",
+                                           "img/Dibujitos/Dibujo 12.jpg",
+                                           "img/Dibujitos/Dibujo 13.jpg"
+                                        ]
+
+                    function obtenerDibujo() {
+                        
+                        let aletorio =  Math.floor(Math.random() * listDibujitos.length);
+
+                        // Obtener la ruta del dibujo aleatorio
+                        let dibujoSeleccionado = listDibujitos[aletorio];
+
+                        // Establecer la imagen en el popup
+                        document.getElementById("popupImage").src = dibujoSeleccionado;
+
+                        // Mostrar el popup
+                        document.getElementById("popup").style.display = "block";
+                        
+                    }                  
+
+                    function closePopup() {
+                    // Ocultar el popup
+                    document.getElementById("popup").style.display = "none";
+                    }
+                    
+
+                </script>
+
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <p><strong>Cada detalle de los Dibujitos estan pensado en ti...</strong></p>
+            <p><strong>Dibujos sencillos, pero hechos con cariño</strong></p>
+            <p><strong>Recuerda siempre que puedes lograr todo lo que te propongas</strong></p>
+            <p>Con admiración de: <strong>Blue</strong></p>
+        </div>
+
+
+    </div>
+</body>
+</html>
