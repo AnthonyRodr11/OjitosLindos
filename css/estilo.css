@@ -149,11 +149,37 @@ body {
 
 
 .popup img {
-    width: 300px; /* Ancho fijo */
-    height: 300px; /* Altura fija */
-    object-fit: contain; /* Mantener las proporciones dentro del contenedor */
-    border-radius: 10px; /* Bordes redondeados opcionales */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra opcional */
+    width: 300px; 
+    height: 300px; 
+    object-fit: contain; 
+    border-radius: 10px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+
+
+.destello-burbujeante {
+    position: relative;
+    display: inline-block;
+    animation: burbujeante 2s infinite;
+}
+
+@keyframes burbujeante {
+    0% {
+        box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.8);
+    }
+    25% {
+        box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.6), 0 0 30px 20px rgba(255, 255, 255, 0.3);
+    }
+    50% {
+        box-shadow: 0 0 30px 15px rgba(255, 255, 255, 0.4), 0 0 40px 25px rgba(255, 255, 255, 0.2);
+    }
+    75% {
+        box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.5), 0 0 50px 30px rgba(255, 255, 255, 0.1);
+    }
+    100% {
+        box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.8);
+    }
 }
 
 
