@@ -8,16 +8,15 @@ body {
 }
 
 
+/* General styling para el navbar */
 .navbar {
     background-color: #f4c542; 
     padding: 10px 0;
     display: flex;
     justify-content: center;
-
 }
 
 .navbar ul {
-
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -25,7 +24,6 @@ body {
 }
 
 .navbar li {
-    
     margin: 0 15px;
     background-color: #f4c542; 
     border-radius: 8px; 
@@ -36,12 +34,47 @@ body {
     color: #3b3b3b; 
     text-decoration: none;
     font-weight: bold;
-    
 }
 
 .navbar a:hover {
     color: #ffd700; 
 }
+
+/* Estilos para pantallas pequeñas (Responsive) */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar li {
+        margin: 5px 0;
+        width: 90%; /* Para que ocupen casi todo el ancho */
+        text-align: center;
+    }
+}
+
+/* Estilos para pantallas muy pequeñas  */
+@media (max-width: 480px) {
+    .navbar {
+        padding: 5px 0;
+    }
+
+    .navbar ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    .navbar li {
+        padding: 10px;
+    }
+}
+
 
 
 .footer {
@@ -183,20 +216,4 @@ body {
     }
 }
 
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        align-items: center;
-    }
 
-    .navbar ul {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .navbar li {
-        margin: 5px 0;
-        width: 90%; /* Para que ocupen casi todo el ancho */
-        text-align: center;
-    }
-}
